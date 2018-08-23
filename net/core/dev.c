@@ -497,7 +497,7 @@ static const unsigned short netdev_lock_type[] = {
 	 ARPHRD_IEEE802154, ARPHRD_IEEE802154_MONITOR,
 	 ARPHRD_PHONET, ARPHRD_PHONET_PIPE,
 	 ARPHRD_CAIF, ARPHRD_IP6GRE, ARPHRD_NETLINK, ARPHRD_6LOWPAN,
-	 ARPHRD_VSOCKMON,
+	 ARPHRD_VSOCKMON, ARPHRD_LORAWAN,
 	 ARPHRD_VOID, ARPHRD_NONE};
 
 static const char *const netdev_lock_name[] = {
@@ -520,7 +520,7 @@ static const char *const netdev_lock_name[] = {
 	"_xmit_IEEE802154", "_xmit_IEEE802154_MONITOR",
 	"_xmit_PHONET", "_xmit_PHONET_PIPE",
 	"_xmit_CAIF", "_xmit_IP6GRE", "_xmit_NETLINK", "_xmit_6LOWPAN",
-	"_xmit_VSOCKMON",
+	"_xmit_VSOCKMON","_xmit_LORAWAN",
 	"_xmit_VOID", "_xmit_NONE"};
 
 static struct lock_class_key netdev_xmit_lock_key[ARRAY_SIZE(netdev_lock_type)];
