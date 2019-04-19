@@ -56,6 +56,7 @@ obj-$(CONFIG_FDDI) += fddi/
 obj-$(CONFIG_QCOM_IPA) += ipa/
 obj-$(CONFIG_FSK) += fsk/
 obj-$(CONFIG_LORA) += lora/
+obj-$(CONFIG_LORAWAN) += lorawan/
 obj-$(CONFIG_PLIP) += plip/
 obj-$(CONFIG_PPP) += ppp/
 obj-$(CONFIG_PPP_ASYNC) += ppp/
