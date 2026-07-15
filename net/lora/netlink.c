@@ -126,7 +126,7 @@ static const struct nla_policy nllora_policy[NLLORA_ATTR_MAX + 1] = {
 
 #define NLLORA_FLAG_NEED_PHY	BIT(0)
 
-static int nllora_pre_doit(const struct genl_ops *ops, struct sk_buff *skb,
+static int nllora_pre_doit(const struct genl_split_ops *ops, struct sk_buff *skb,
 			   struct genl_info *info)
 {
 	struct nlattr **attrs = info->attrs;
