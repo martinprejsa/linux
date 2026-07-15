@@ -1505,7 +1505,7 @@ static int sx127x_probe(struct spi_device *spi)
 	return 0;
 }
 
-static int sx127x_remove(struct spi_device *spi)
+static void sx127x_remove(struct spi_device *spi)
 {
 	struct net_device *netdev = spi_get_drvdata(spi);
 	struct sx127x_priv *priv = netdev_priv(netdev);
@@ -1520,8 +1520,6 @@ static int sx127x_remove(struct spi_device *spi)
 		fsk_phy_unregister(priv->fsk_phy);
 
 	dev_info(&spi->dev, "removed\n");
-
-	return 0;
 }
 
 static struct spi_driver sx127x_spi_driver = {
